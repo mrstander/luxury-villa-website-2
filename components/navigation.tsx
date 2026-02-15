@@ -7,9 +7,7 @@ const navLinks = [
   { label: "Our Story", href: "#story" },
   { label: "The Villa", href: "#villa" },
   { label: "Experiences", href: "#experiences" },
-  { label: "Wildlife", href: "#wildlife" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Sustainability", href: "#sustainability" },
+
 ]
 
 export function Navigation() {
@@ -27,11 +25,10 @@ export function Navigation() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isScrolled
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
             ? "bg-[#2a2318]/95 backdrop-blur-sm py-3"
             : "bg-transparent py-5"
-        }`}
+          }`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10">
           {/* Logo */}
@@ -78,11 +75,10 @@ export function Navigation() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-40 flex flex-col items-center justify-center bg-[#2a2318]/98 backdrop-blur-md transition-all duration-500 lg:hidden ${
-          isMobileMenuOpen
+        className={`fixed inset-0 z-40 flex flex-col items-center justify-center bg-[#2a2318]/98 backdrop-blur-md transition-all duration-500 lg:hidden ${isMobileMenuOpen
             ? "pointer-events-auto opacity-100"
             : "pointer-events-none opacity-0"
-        }`}
+          }`}
       >
         <nav className="flex flex-col items-center gap-8">
           {navLinks.map((link) => (
