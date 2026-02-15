@@ -26,8 +26,8 @@ export function Navigation() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-            ? "bg-[#2a2318]/95 backdrop-blur-sm py-3"
-            : "bg-transparent py-5"
+          ? "bg-[#2a2318]/95 backdrop-blur-sm py-3"
+          : "bg-transparent py-5"
           }`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10">
@@ -57,7 +57,7 @@ export function Navigation() {
           {/* CTA + Mobile Toggle */}
           <div className="flex items-center gap-4">
             <a
-              href="#booking"
+              href="https://site.nightsbridge.com/"
               className="hidden border border-[#c9a96e] px-5 py-2 text-xs uppercase tracking-[0.2em] text-[#c9a96e] transition-all duration-300 hover:bg-[#c9a96e] hover:text-[#2a2318] sm:inline-block"
             >
               Book Now
@@ -76,8 +76,8 @@ export function Navigation() {
       {/* Mobile Menu Overlay */}
       <div
         className={`fixed inset-0 z-40 flex flex-col items-center justify-center bg-[#2a2318]/98 backdrop-blur-md transition-all duration-500 lg:hidden ${isMobileMenuOpen
-            ? "pointer-events-auto opacity-100"
-            : "pointer-events-none opacity-0"
+          ? "pointer-events-auto opacity-100"
+          : "pointer-events-none opacity-0"
           }`}
       >
         <nav className="flex flex-col items-center gap-8">

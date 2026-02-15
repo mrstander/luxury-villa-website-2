@@ -72,7 +72,7 @@ export function Hero() {
             }`}
         >
           <a
-            href="#booking"
+            href="https://site.nightsbridge.com/"
             className="bg-[#c9a96e] px-8 py-3.5 text-xs uppercase tracking-[0.25em] text-[#2a2318] transition-all duration-300 hover:bg-[#d4b87d]"
           >
             Check Availability
