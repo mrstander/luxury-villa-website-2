@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
 
 const navLinks = [
   { label: "Our Story", href: "about" },
@@ -32,14 +33,13 @@ export function Navigation() {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10">
           {/* Logo */}
-          <a href="#" className="flex flex-col items-start">
-            <span className="font-serif text-xl tracking-widest text-[#f5f0e8] lg:text-2xl">
-              WILD HORIZONS
-            </span>
-            <span className="text-[10px] uppercase tracking-[0.35em] text-[#c9a96e]">
-              Private Luxury
-            </span>
-          </a>
+          <Image
+            src="/images/logo.png"
+            alt="Wild Horizons Logo"
+            width={300} // adjust as needed
+            height={150}
+            className="object-contain"
+          />
 
           {/* Desktop Navigation */}
           <nav className="hidden items-center gap-8 lg:flex">

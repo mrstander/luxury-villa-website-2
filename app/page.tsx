@@ -20,7 +20,7 @@ export default function Page() {
       <LaunchSpecial />
       <FAQ />
       <BookingCTA />
-      <Footer />
+
     </main>
   )
 }
