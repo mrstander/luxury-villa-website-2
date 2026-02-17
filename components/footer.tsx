@@ -18,10 +18,10 @@ export function Footer() {
           <div>
             <div className="mb-6">
               <span className="font-serif text-xl tracking-widest text-[#f5f0e8]">
-                WILD HORIZONS
+                Nama Sands
               </span>
               <p className="mt-1 text-[10px] uppercase tracking-[0.35em] text-[#c9a96e]">
-                Private Luxury
+                Safari Reserve
               </p>
             </div>
             <p className="max-w-xs text-sm leading-relaxed text-[#f5f0e8]/50">
@@ -59,7 +59,7 @@ export function Footer() {
                 className="inline-flex items-center gap-3 text-sm text-[#f5f0e8]/50 transition-colors duration-300 hover:text-[#c9a96e]"
               >
                 <Mail size={16} className="shrink-0" />
-                reservations@wildhorizons.co.za
+                info@namasands.co.za
               </a>
               <a
                 href="tel:+27000000000"
@@ -82,7 +82,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-xs text-[#f5f0e8]/30">
-            &copy; {new Date().getFullYear()} Wild Horizons. All rights reserved.
+            &copy; {new Date().getFullYear()} Nama Sands Safari Reserve. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a
