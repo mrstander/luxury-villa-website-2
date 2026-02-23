@@ -7,7 +7,7 @@ import Image from "next/image"
 const navLinks = [
   { label: "Our Story", href: "about" },
   { label: "The Villa", href: "villa" },
-  { label: "Experiences", href: "#experiences" },
+  { label: "Experiences", href: "experiences" },
 ]
 
 export function Navigation() {
@@ -26,8 +26,8 @@ export function Navigation() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-            ? "bg-[#2a2318]/95 backdrop-blur-sm py-3 shadow-lg"
-            : "bg-transparent py-4"
+          ? "bg-[#2a2318]/95 backdrop-blur-sm py-3 shadow-lg"
+          : "bg-transparent py-4"
           }`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10">
@@ -75,8 +75,8 @@ export function Navigation() {
       {/* Mobile Menu Overlay */}
       <div
         className={`fixed inset-0 z-40 flex flex-col items-center justify-center bg-[#2a2318]/95 backdrop-blur-lg transition-all duration-500 lg:hidden ${isMobileMenuOpen
-            ? "pointer-events-auto opacity-100"
-            : "pointer-events-none opacity-0"
+          ? "pointer-events-auto opacity-100"
+          : "pointer-events-none opacity-0"
           }`}
       >
         <nav className="flex flex-col items-center gap-6">

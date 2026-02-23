@@ -140,3 +140,17 @@
 .animation-delay-400 { animation-delay: 400ms; }
 .animation-delay-600 { animation-delay: 600ms; }
 .animation-delay-800 { animation-delay: 800ms; }
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

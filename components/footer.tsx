@@ -1,12 +1,10 @@
 import { Mail, Phone, MapPin } from "lucide-react"
 
 const footerLinks = [
-  { label: "Our Story", href: "#story" },
-  { label: "The Villa", href: "#villa" },
-  { label: "Experiences", href: "#experiences" },
-  { label: "Wildlife", href: "#wildlife" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Sustainability", href: "#sustainability" },
+  { label: "Our Story", href: "/about" },
+  { label: "The Villa", href: "/villa" },
+  { label: "Experiences", href: "/experiences" },
+
 ]
 
 export function Footer() {

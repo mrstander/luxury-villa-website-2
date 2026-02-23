@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { ChevronDown } from "lucide-react"
+import Image from "next/image"
 
 
 export function Hero() {
@@ -16,13 +17,12 @@ export function Hero() {
       {/* Background Image (video placeholder) */}
       {/* Background Video */}
       <div className="absolute inset-0 size-full">
-        <iframe
-          src="https://www.youtube.com/embed/tGi10NcgeHQ?autoplay=1&mute=1&controls=0&loop=1&playlist=tGi10NcgeHQ&showinfo=0&rel=0&iv_load_policy=3&disablekb=1"
-          className="absolute inset-0 h-full w-full object-cover"
-          allow="autoplay; encrypted-media"
-          allowFullScreen
-          title="Hero Video"
-          style={{ pointerEvents: "none" }}
+        <Image
+          src="/images/Hero.jpg"
+          alt="Hero background"
+          fill
+          priority
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-[#1a1610]/50" />
       </div>

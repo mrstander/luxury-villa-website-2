@@ -2,6 +2,13 @@ import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
 
+const images = [
+  "/images/fire.jpg",
+  "/images/tab.jpg",
+  "/images/about.jpg",
+  "/images/wine.jpg",
+]
+
 export const metadata: Metadata = {
   title: "Our Story | Nama Sands",
   description:
@@ -40,9 +47,9 @@ export default function AboutPage() {
     <main className="bg-[#f5f0e8] text-[#1e1e1e]">
 
       {/* ================= HERO ================= */}
-      <section className="relative h-[65vh] min-h-[450px] pt-24">
+      <section className="relative h-[100vh] min-h-[450px] pt-24">
         <Image
-          src="/images/about-landscape.jpg"
+          src="/images/about.jpg"
           alt="Panoramic view of Nama Sands reserve landscape"
           fill
           priority
@@ -56,21 +63,20 @@ export default function AboutPage() {
             Our Story
           </p>
           <h1 className="font-serif text-4xl font-light text-white md:text-6xl lg:text-7xl">
-            The Story of <span className="italic">Nama Sands</span>
+            The Story of <br></br><span className="italic">Nama Sands</span>
           </h1>
         </div>
       </section>
 
       {/* ================= INTRO ================= */}
       <section className="py-24 md:py-32">
-        <div className="mx-auto max-w-3xl px-6 lg:px-10">
-          <div className="mb-12 h-px w-16 bg-[#c9a96e]" />
+        <div className="mx-auto max-w-3xl px-6 lg:px-10 text-center">
+          <h2 className="mb-10 font-serif text-3xl font-light md:text-4xl">
+            <span className="italic">Nama Sands</span>
+          </h2>
 
           <p className="mb-8 text-lg leading-relaxed text-black/70 md:text-xl">
-            <span className="float-left mr-4 mt-1 font-serif text-7xl leading-[0.8] text-black md:text-8xl">
-              N
-            </span>
-            ama Sands was born from a vision — a vision rooted in conservation,
+            Nama Sands was born from a vision — a vision rooted in conservation,
             responsibility, and a deep respect for the land.
           </p>
 
@@ -81,33 +87,53 @@ export default function AboutPage() {
             ecosystems began to suffer.
           </p>
 
-          <p className="mb-8 text-lg leading-relaxed text-black/70 md:text-xl">
+          <p className="text-lg leading-relaxed text-black/70 md:text-xl">
             In 1997, a dream began to take shape: to restore what had been lost,
             to reintroduce species to their natural habitat, and to create a
             sanctuary where fauna and flora could once again thrive in harmony.
-          </p>
-
-          <p className="text-lg leading-relaxed text-black/70 md:text-xl">
+            <br></br>
             Then, in 2013, the first farm was purchased — and the vision became reality.
           </p>
         </div>
       </section>
 
       {/* ================= IMAGE BREAK ================= */}
-      <section className="relative h-[55vh] min-h-[400px]">
-        <Image
-          src="/images/our-story.jpg"
-          alt="Evening landscape at Nama Sands"
-          fill
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-black/20" />
+      <section className="py-16">
+        <div className="relative w-full overflow-hidden">
+          <div className="animate-marquee px-6 lg:px-10">
+            {/* duplicate images for seamless loop */}
+            {[...images, ...images].map((src, i) => (
+              <div
+                key={i}
+                className="
+                relative
+                h-[260px]
+                min-w-[75vw]
+                md:h-[380px]
+                md:min-w-[42vw]
+                lg:min-w-[32vw]
+                mr-6
+                overflow-hidden
+                rounded-[5px]
+              "
+              >
+                <Image
+                  src={src}
+                  alt={`Nama Sands image ${i + 1}`}
+                  fill
+                  sizes="(max-width: 768px) 75vw, (max-width: 1024px) 42vw, 32vw"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-black/20" />
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* ================= LOCATION & LAND ================= */}
-      <section className="py-24 md:py-32">
-        <div className="mx-auto max-w-3xl px-6 lg:px-10">
+      <section className="py-10 md:py-10">
+        <div className="mx-auto max-w-3xl px-6 lg:px-10 text-center">
           <h2 className="mb-10 font-serif text-3xl font-light md:text-4xl">
             A Sanctuary on the <span className="italic">West Coast</span>
           </h2>

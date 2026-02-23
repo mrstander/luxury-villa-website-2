@@ -18,7 +18,7 @@ const experiences: Experience[] = [
       "Traverse the reserve in an open-top vehicle with expert guides. Encounter zebra, giraffe, eland, wildebeest and more across vast open landscapes.",
     detail:
       "It's immersive, unhurried, and deeply connected to the land.",
-    image: "/images/experience-game-drive.jpg",
+    image: "/images/game.jpg",
   },
   {
     title: "Horse Riding",
@@ -34,16 +34,9 @@ const experiences: Experience[] = [
       "Set out on foot with a knowledgeable guide to explore panoramic mountain trails and discover the reserve's rich indigenous flora.",
     detail:
       "It's grounding, meditative, and soaked in natural wonder.",
-    image: "/images/experience-hiking.jpg",
+    image: "/images/walk.jpg",
   },
-  {
-    title: "Stargazing",
-    description:
-      "As night descends, witness spectacular celestial displays completely unobstructed by light pollution. The Southern Hemisphere sky reveals its full majesty.",
-    detail:
-      "It's magical, humbling, and utterly unforgettable.",
-    image: "/images/experience-stargazing.jpg",
-  },
+
 ]
 
 function ExperienceCard({
@@ -87,7 +80,7 @@ function ExperienceCard({
         src={experience.image}
         alt={experience.title}
         fill
-        className="object-cover transition-transform duration-700 group-hover:scale-105"
+        className="object-cover transition-transform duration-700 group-hover:scale-105 rounded-md"
         sizes="(max-width: 768px) 100vw, 33vw"
       />
     </div>
@@ -95,9 +88,8 @@ function ExperienceCard({
 
   return (
     <div
-      className={`flex flex-col gap-6 transition-all duration-700 ${
-        isInView ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
-      }`}
+      className={`flex flex-col gap-6 transition-all duration-700 ${isInView ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
+        }`}
       style={{ transitionDelay: isInView ? `${delay}ms` : "0ms" }}
     >
       {imagePosition === "top" ? (
@@ -123,9 +115,8 @@ export function Experiences() {
       <div ref={ref} className="mx-auto max-w-6xl px-6 lg:px-10">
         {/* Section Heading - editorial style with gold line */}
         <div
-          className={`mb-20 transition-all duration-700 ${
-            isInView ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-          }`}
+          className={`mb-20 transition-all duration-700 ${isInView ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+            }`}
         >
           <h2 className="font-serif text-4xl font-normal tracking-wide text-foreground md:text-5xl lg:text-6xl">
             Adventure & Activities
@@ -162,41 +153,7 @@ export function Experiences() {
           />
         </div>
 
-        {/* Row 2 - Single centered card for Stargazing */}
-        <div className="mt-20 flex justify-center">
-          <div className="grid max-w-4xl gap-x-10 gap-y-8 md:grid-cols-2">
-            <div
-              className={`flex flex-col justify-center gap-3 transition-all duration-700 ${
-                isInView ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
-              }`}
-              style={{ transitionDelay: isInView ? "800ms" : "0ms" }}
-            >
-              <h3 className="font-serif text-2xl font-normal tracking-wide text-foreground md:text-3xl">
-                {experiences[3].title}
-              </h3>
-              <p className="text-sm leading-relaxed text-muted-foreground">
-                {experiences[3].description}
-              </p>
-              <p className="text-sm leading-relaxed text-muted-foreground">
-                {experiences[3].detail}
-              </p>
-            </div>
-            <div
-              className={`group relative aspect-[4/5] overflow-hidden transition-all duration-700 ${
-                isInView ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
-              }`}
-              style={{ transitionDelay: isInView ? "900ms" : "0ms" }}
-            >
-              <Image
-                src={experiences[3].image}
-                alt={experiences[3].title}
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   )
