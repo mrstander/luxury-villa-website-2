@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 
 const experiences = [
     {
-        title: "Namibia: Skeleton Coast and Dunes Expedition",
+        title: "Game Drives",
         description:
-            "Journey through Namibia's Skeleton Coast and towering dunes, where the Atlantic's rugged shores meet vast desert horizons.",
-        image: "/images/tab.jpg",
+            "Experience the thrill of a safari game drive with our expert guides. Encounter zebra, giraffe, eland, wildebeest and more across vast open landscapes.",
+        image: "/images/game.jpg",
         guests: "4 Guests",
-        duration: "8 Days",
+        duration: "2 Hours",
         type: "Private",
         price: "From R100.00",
         link: "/contact",

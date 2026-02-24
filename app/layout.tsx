@@ -4,7 +4,8 @@ import { Playfair_Display, Lato } from 'next/font/google'
 import './globals.css'
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
-1
+import { WhatsAppWidget } from '@/components/whatsapp-widget'
+
 const playfair = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-playfair',
@@ -38,6 +39,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <Navigation />
         {children}
+        <WhatsAppWidget />
         <Footer />
       </body>
     </html>
