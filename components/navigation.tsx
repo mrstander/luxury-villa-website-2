@@ -3,11 +3,12 @@
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 const navLinks = [
-  { label: "Our Story", href: "about" },
-  { label: "The Villa", href: "villa" },
-  { label: "Experiences", href: "experiences" },
+  { label: "Our Story", href: "/about" },
+  { label: "The Villa", href: "/villa" },
+  { label: "Experiences", href: "/experiences" },
 ]
 
 export function Navigation() {
@@ -24,21 +25,27 @@ export function Navigation() {
 
   return (
     <>
+      {/* Header */}
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-          ? "bg-[#2a2318]/95 backdrop-blur-sm py-3 shadow-lg"
-          : "bg-transparent py-4"
+          ? "bg-[#2a2318]/95 backdrop-blur-sm shadow-lg"
+          : "bg-transparent"
           }`}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10">
+        {/* ✅ Mobile 55px | Desktop 70px */}
+        <div className="mx-auto flex h-[55px] lg:h-[80px] max-w-7xl items-center justify-between px-4 lg:px-10">
+
           {/* Logo */}
-          <Image
-            src="/images/logo.png"
-            alt="Wild Horizons Logo"
-            width={220} // slightly smaller
-            height={100}
-            className="object-contain"
-          />
+          <Link href="/" aria-label="Go to homepage">
+            <Image
+              src="/images/logo.png"
+              alt="Wild Horizons Logo"
+              width={160}
+              height={80}
+              className="object-contain lg:w-[220px] cursor-pointer"
+              priority
+            />
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden items-center gap-8 lg:flex">
@@ -54,19 +61,22 @@ export function Navigation() {
           </nav>
 
           {/* CTA + Mobile Toggle */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
+            {/* Desktop CTA */}
             <a
-              href="https://site.nightsbridge.com/"
+              href="/villa"
               className="hidden border border-[#e6c97c] px-5 py-2 text-sm uppercase tracking-wide text-[#e6c97c] rounded-md transition-all duration-300 hover:bg-[#e6c97c] hover:text-[#2a2318] sm:inline-block"
             >
               Book Now
             </a>
+
+            {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-[#f5f0e8] lg:hidden p-2 rounded-md hover:bg-white/10 transition"
+              className="text-[#f5f0e8] lg:hidden w-[40px] h-[40px] flex items-center justify-center rounded-md hover:bg-white/10 transition"
               aria-label="Toggle menu"
             >
-              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
           </div>
         </div>
@@ -90,8 +100,9 @@ export function Navigation() {
               {link.label}
             </a>
           ))}
+
           <a
-            href="#booking"
+            href="/villa"
             onClick={() => setIsMobileMenuOpen(false)}
             className="mt-6 border border-[#e6c97c] px-10 py-3 text-sm uppercase tracking-wide text-[#e6c97c] rounded-md transition-all duration-300 hover:bg-[#e6c97c] hover:text-[#2a2318]"
           >

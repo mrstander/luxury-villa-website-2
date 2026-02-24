@@ -16,15 +16,15 @@ export function Hero() {
     <section className="relative flex h-screen items-center justify-center overflow-hidden">
       {/* Background Image (video placeholder) */}
       {/* Background Video */}
-      <div className="absolute inset-0 size-full">
-        <Image
-          src="/images/Hero.jpg"
-          alt="Hero background"
-          fill
-          priority
-          className="object-cover"
+      {/* Background Video (YouTube) */}
+      <div className="absolute inset-0 size-full overflow-hidden">
+        <iframe
+          src="https://www.youtube.com/embed/3cXrPv-adi0?autoplay=1&mute=1&loop=1&playlist=3cXrPv-adi0&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1"
+          className="absolute inset-x-0 top-1/2 min-h-full min-w-full -translate-y-1/2 pointer-events-none aspect-video scale-110 lg:scale-[1.3]"
+          allow="autoplay; fullscreen"
+          title="Hero Video"
         />
-        <div className="absolute inset-0 bg-[#1a1610]/50" />
+        <div className="absolute inset-0 bg-[#1a1610]/40" />
       </div>
 
       {/* Content */}
@@ -72,13 +72,13 @@ export function Hero() {
             }`}
         >
           <a
-            href="https://site.nightsbridge.com/"
+            href="/villa"
             className="bg-[#c9a96e] px-8 py-3.5 text-xs uppercase tracking-[0.25em] text-[#2a2318] transition-all duration-300 hover:bg-[#d4b87d]"
           >
             Check Availability
           </a>
           <a
-            href="#story"
+            href="/about"
             className="border border-[#f5f0e8]/30 px-8 py-3.5 text-xs uppercase tracking-[0.25em] text-[#f5f0e8] transition-all duration-300 hover:border-[#f5f0e8]/60"
           >
             Discover More

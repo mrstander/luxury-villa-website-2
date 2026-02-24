@@ -3,16 +3,20 @@
 import * as React from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { BookingSearchBlock } from "@/components/booking-search-block"
 
 const heroImages = [
-    "https://images.unsplash.com/photo-1709403740053-47b84630aff4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1729659701064-1262d34aaba5?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "/images/villa/villa1.jpg",
+    "/images/villa/villa2.jpg",
 ]
 
 const galleryImages = [
-    "https://plus.unsplash.com/premium_photo-1670591396438-d3c517977c3b?q=80&w=1509&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1586782450797-08574589418c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-
+    "/images/villa/villa3.jpg",
+    "/images/villa/villa4.jpg",
+    "/images/villa/villa5.jpg",
+    "/images/villa/villa6.jpg",
+    "/images/villa/villa7.jpg",
+    "/images/villa/villa8.jpg",
 ]
 
 const features = [
@@ -72,15 +76,10 @@ export default function VillaPage() {
                     <p className="max-w-2xl mx-auto text-lg md:text-xl opacity-90 mb-10">
                         Refined luxury immersed in fynbos landscapes and panoramic valley views.
                     </p>
-
-                    <Link
-                        href="https://site.nightsbridge.com/"
-                        className="bg-white text-black px-10 py-4 uppercase tracking-widest text-sm hover:bg-black hover:text-white transition-all duration-300"
-                    >
-                        Book Now
-                    </Link>
                 </div>
             </section>
+
+            <BookingSearchBlock />
 
             {/* ================= INTRO SECTION ================= */}
             <section className="max-w-6xl mx-auto px-6 py-28 md:py-36">
@@ -102,17 +101,12 @@ export default function VillaPage() {
                             in wilderness.
                         </p>
 
-                        <Link
-                            href="https://site.nightsbridge.com/"
-                            className="border border-black px-8 py-3 uppercase tracking-widest text-xs hover:bg-black hover:text-white transition-all duration-300"
-                        >
-                            Reserve Your Stay
-                        </Link>
                     </div>
 
-                    <div className="relative h-[500px]">
+                    {/* ✅ FEATURE IMAGE WITH 5px RADIUS */}
+                    <div className="relative h-[500px] rounded-[5px] overflow-hidden">
                         <Image
-                            src="/images/villa/feature.jpg"
+                            src="/images/villa/villa5.jpg"
                             alt="Villa Deck View"
                             fill
                             className="object-cover"
@@ -153,7 +147,10 @@ export default function VillaPage() {
 
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                         {galleryImages.map((src, index) => (
-                            <div key={index} className="relative h-[300px] overflow-hidden">
+                            <div
+                                key={index}
+                                className="relative h-[300px] overflow-hidden rounded-[5px]"
+                            >
                                 <Image
                                     src={src}
                                     alt="Villa Gallery"
@@ -165,35 +162,6 @@ export default function VillaPage() {
                     </div>
                 </div>
             </section>
-
-            {/* ================= FINAL CTA ================= */}
-            <section className="relative h-[60vh] flex items-center justify-center text-center text-white">
-                <Image
-                    src="/images/villa/cta-bg.jpg"
-                    alt="Luxury Villa View"
-                    fill
-                    className="object-cover"
-                />
-                <div className="absolute inset-0 bg-black/60" />
-
-                <div className="relative px-6">
-                    <h2 className="font-serif italic text-4xl md:text-5xl mb-6">
-                        Pristine Pocket of Paradise
-                    </h2>
-
-                    <p className="max-w-xl mx-auto mb-10 opacity-90">
-                        Escape into serenity and experience barefoot luxury surrounded by untouched wilderness.
-                    </p>
-
-                    <Link
-                        href="https://site.nightsbridge.com/"
-                        className="bg-white text-black px-10 py-4 uppercase tracking-widest text-sm hover:bg-black hover:text-white transition-all duration-300"
-                    >
-                        Book Your Stay
-                    </Link>
-                </div>
-            </section>
-
         </main>
     )
 }

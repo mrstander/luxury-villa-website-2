@@ -35,9 +35,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${playfair.variable} ${lato.variable}`}>
-      <Navigation />
-      <body className="font-sans antialiased">{children}</body>
-      <Footer />
+      <body className="font-sans antialiased">
+        <Navigation />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }

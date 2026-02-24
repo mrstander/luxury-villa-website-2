@@ -63,7 +63,7 @@ export default function AboutPage() {
             Our Story
           </p>
           <h1 className="font-serif text-4xl font-light text-white md:text-6xl lg:text-7xl">
-            The Story of <br></br><span className="italic">Nama Sands</span>
+            The Story of <br /> <span className="italic">Nama Sands</span>
           </h1>
         </div>
       </section>
@@ -91,7 +91,7 @@ export default function AboutPage() {
             In 1997, a dream began to take shape: to restore what had been lost,
             to reintroduce species to their natural habitat, and to create a
             sanctuary where fauna and flora could once again thrive in harmony.
-            <br></br>
+            <br />
             Then, in 2013, the first farm was purchased — and the vision became reality.
           </p>
         </div>
@@ -215,17 +215,10 @@ export default function AboutPage() {
 
           <div className="mt-12 flex flex-wrap items-center justify-center gap-6">
             <Link
-              href="/#villa"
+              href="/villa"
               className="border border-[#c9a96e] px-8 py-3 text-xs uppercase tracking-[0.3em] transition-all duration-300 hover:bg-[#c9a96e] hover:text-[#2a2318]"
             >
               Explore the Villa
-            </Link>
-
-            <Link
-              href="/#booking"
-              className="bg-[#c9a96e] px-8 py-3 text-xs uppercase tracking-[0.3em] text-[#2a2318] transition-all duration-300 hover:bg-[#b8963e]"
-            >
-              Book Your Stay
             </Link>
           </div>
         </div>
