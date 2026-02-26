@@ -15,26 +15,26 @@ const experiences: Experience[] = [
   {
     title: "Game Drives",
     description:
-      "Traverse the reserve in an open-top vehicle with expert guides. Encounter zebra, giraffe, eland, wildebeest and more across vast open landscapes.",
+      "Experience the thrill of a game drive with our experienced guide. Encounter zebra, giraffe, eland, wildebeest and more across vast open fynbos landscapes",
     detail:
       "It's immersive, unhurried, and deeply connected to the land.",
-    image: "/images/game.jpg",
+    image: "/images/gamedrive.jpeg",
   },
   {
-    title: "Horse Riding",
+    title: "Spa Treatments",
     description:
-      "Saddle up and explore the reserve on horseback, moving through golden grasslands with panoramic views of the surrounding mountains.",
+      "Enjoy private spa treatments in the comfort of your own suite, where relaxation comes to you. From restorative massages to tailored wellness treatments, restore body and mind in complete privacy and effortless luxury",
     detail:
       "It's peaceful, exhilarating, and a truly unique way to experience the bush.",
-    image: "/images/experience-horse.jpg",
+    image: "/images/spa.jpeg",
   },
   {
-    title: "Nature Walks",
+    title: "Private Chef",
     description:
-      "Set out on foot with a knowledgeable guide to explore panoramic mountain trails and discover the reserve's rich indigenous flora.",
+      "Enjoy the luxury of a private chef crafting personalised culinary experiences in the comfort of your villa. From leisurely breakfasts to beautifully prepared dinners",
     detail:
       "It's grounding, meditative, and soaked in natural wonder.",
-    image: "/images/walk.jpg",
+    image: "/images/chef.jpeg",
   },
 
 ]

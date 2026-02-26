@@ -14,7 +14,7 @@ export default function ContactPage() {
             {/* ================= HERO ================= */}
             <section className="relative h-[60vh] min-h-[400px] pt-24">
                 <Image
-                    src="/images/walk.jpg"
+                    src="/images/villa.jpg"
                     alt="Landscape view of Nama Sands"
                     fill
                     priority

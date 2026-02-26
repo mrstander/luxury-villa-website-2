@@ -54,7 +54,7 @@ export default function ExperiencesPage() {
                         Our Experiences
                     </p>
                     <h1 className="font-serif text-4xl font-light md:text-6xl lg:text-7xl">
-                        Immersive <br></br><span className="italic">Journeys</span>
+                        slow adventure
                     </h1>
                 </div>
             </section>
