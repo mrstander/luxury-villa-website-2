@@ -5,6 +5,21 @@ import Image from "next/image"
 import Link from "next/link"
 import { BookingSearchBlock } from "@/components/booking-search-block"
 
+import {
+    Flame,
+    Wifi,
+    Bath,
+    ShowerHead,
+    BedDouble,
+    AirVent,
+    CookingPot,
+    Waves,
+    Mountain,
+    Eye,
+    Sofa,
+    Trees,
+} from "lucide-react"
+
 const heroImages = [
     "/images/villa/villa1.jpg",
     "/images/villa/villa2.jpg",
@@ -19,20 +34,23 @@ const galleryImages = [
     "/images/villa/villa8.jpg",
 ]
 
-const features = [
-    "Inside braai",
-    "360° View from stoop / veranda",
-    "Fynbos surroundings",
-    "Waterhole lookout point",
-    "Free Wi-Fi",
-    "3 Showers & 1 Bath",
-    "Daybed on stoop",
-    "3 En-suite bedrooms",
-    "Aircon throughout the villa",
-    "Fully equipped kitchen",
-    "Wood-fired Jacuzzi",
-    "Wood-fired splash pool",
-    "Bonfire boma",
+const leftFeatures = [
+    { icon: CookingPot, label: "Inside braai" },
+    { icon: Eye, label: "360° View from stoop / veranda" },
+    { icon: Trees, label: "Fynbos surroundings" },
+    { icon: Mountain, label: "Waterhole lookout point" },
+    { icon: Sofa, label: "Daybed on stoop" },
+    { icon: Waves, label: "Wood-fired Jacuzzi" },
+    { icon: Waves, label: "Wood-fired splash pool" },
+]
+
+const rightFeatures = [
+    { icon: Flame, label: "Bonfire boma" },
+    { icon: Wifi, label: "Free Wi-Fi" },
+    { icon: ShowerHead, label: "3 Showers & 1 Bath" },
+    { icon: Bath, label: "3 En-suite bedrooms" },
+    { icon: AirVent, label: "Aircon throughout the villa" },
+    { icon: CookingPot, label: "Fully equipped kitchen" },
 ]
 
 export default function VillaPage() {
@@ -81,8 +99,8 @@ export default function VillaPage() {
 
             <BookingSearchBlock />
 
-            {/* ================= INTRO SECTION ================= */}
-            <section className="max-w-6xl mx-auto px-6 py-12 md:py-12">
+            {/* ================= INTRO ================= */}
+            <section className="max-w-6xl mx-auto px-6 py-16">
                 <div className="grid md:grid-cols-2 gap-16 items-center">
 
                     <div>
@@ -100,13 +118,15 @@ export default function VillaPage() {
                             interiors and panoramic views create a sanctuary immersed
                             in wilderness.
                         </p>
-                        <Link href="/images/rate.jpeg" className="inline-flex items-center justify-center border border-black/10 px-6 py-3 text-[10px] uppercase tracking-[0.3em] font-bold transition-all duration-300 hover:bg-[#c9a96e] hover:border-[#c9a96e] hover:text-[#2a2318]">
+
+                        <Link
+                            href="/images/rate.jpeg"
+                            className="inline-flex items-center justify-center border border-black/10 px-6 py-3 text-[10px] uppercase tracking-[0.3em] font-bold transition-all duration-300 hover:bg-[#c9a96e] hover:border-[#c9a96e] hover:text-[#2a2318]"
+                        >
                             View Rate Card
                         </Link>
-
                     </div>
 
-                    {/* ✅ FEATURE IMAGE WITH 5px RADIUS */}
                     <div className="relative h-[500px] rounded-[5px] overflow-hidden">
                         <Image
                             src="/images/villa/villa-bath.jpeg"
@@ -119,8 +139,8 @@ export default function VillaPage() {
                 </div>
             </section>
 
-            {/* ================= FEATURES ================= */}
-            <section className="max-w-6xl mx-auto px-6 py-12 md:py-12">
+            {/* ================= FACILITIES ================= */}
+            <section className="max-w-6xl mx-auto px-6 py-20">
                 <div className="text-center mb-16">
                     <h3 className="font-serif italic text-3xl md:text-4xl mb-4">
                         Facilities
@@ -128,12 +148,38 @@ export default function VillaPage() {
                     <div className="w-16 h-[1px] bg-black/30 mx-auto" />
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-sm md:text-base">
-                    {features.map((feature, index) => (
-                        <div key={index} className="border-b border-black/20 pb-4">
-                            {feature}
-                        </div>
-                    ))}
+                <div className="grid md:grid-cols-2 gap-16 max-w-4xl mx-auto">
+
+                    {/* LEFT COLUMN */}
+                    <div className="space-y-6">
+                        {leftFeatures.map((feature, index) => {
+                            const Icon = feature.icon
+                            return (
+                                <div key={index} className="flex items-center gap-4">
+                                    <Icon className="w-5 h-5 text-black" strokeWidth={1.2} />
+                                    <span className="tracking-wide text-[15px] text-black/80">
+                                        {feature.label}
+                                    </span>
+                                </div>
+                            )
+                        })}
+                    </div>
+
+                    {/* RIGHT COLUMN */}
+                    <div className="space-y-6">
+                        {rightFeatures.map((feature, index) => {
+                            const Icon = feature.icon
+                            return (
+                                <div key={index} className="flex items-center gap-4">
+                                    <Icon className="w-5 h-5 text-black" strokeWidth={1.2} />
+                                    <span className="tracking-wide text-[15px] text-black/80">
+                                        {feature.label}
+                                    </span>
+                                </div>
+                            )
+                        })}
+                    </div>
+
                 </div>
             </section>
 
@@ -163,8 +209,10 @@ export default function VillaPage() {
                             </div>
                         ))}
                     </div>
+
                 </div>
             </section>
+
         </main>
     )
 }
