@@ -7,7 +7,7 @@ export function LaunchSpecial() {
   const { ref, isInView } = useInView()
 
   return (
-    <section className="relative py-16 md:py-20 overflow-hidden">
+    <section className="relative py-10 md:py-10 overflow-hidden">
       {/* Background Image */}
       <Image
         src="/images/Hero.jpg" // 👈 change to your image
@@ -23,7 +23,7 @@ export function LaunchSpecial() {
       {/* Content */}
       <div
         ref={ref}
-        className="relative mx-auto max-w-4xl px-6 text-center lg:px-10"
+        className="relative mx-auto max-w-3xl px-4 text-center lg:px-4"
       >
         <div
           className={`transition-all duration-700 ${isInView
@@ -35,13 +35,13 @@ export function LaunchSpecial() {
             Limited Time Offer
           </p>
 
-          <h2 className="font-serif text-3xl font-light text-[#2a2318] md:text-4xl lg:text-5xl">
+          <h2 className="font-serif text-xl font-light text-[#2a2318] md:text-4xl lg:text-4xl">
             Launch Special
           </h2>
 
           <div className="mx-auto my-6 h-px w-16 bg-[#2a2318]/30" />
 
-          <p className="mb-2 font-serif text-5xl font-light text-[#2a2318] md:text-6xl lg:text-7xl">
+          <p className="mb-2 font-serif text-xl font-light text-[#2a2318] md:text-3xl lg:text-4xl">
             R14,000
           </p>
 

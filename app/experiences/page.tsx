@@ -54,7 +54,7 @@ export default function ExperiencesPage() {
                         Our Experiences
                     </p>
                     <h1 className="font-serif text-4xl font-light md:text-6xl lg:text-7xl">
-                        slow adventure
+                        Slow Adventure
                     </h1>
                 </div>
             </section>
@@ -64,7 +64,7 @@ export default function ExperiencesPage() {
                 <div className="mx-auto max-w-7xl px-6 lg:px-10">
                     <div className="text-center mb-20 max-w-3xl mx-auto">
                         <h2 className="font-serif text-3xl md:text-5xl italic font-light text-black/80 mb-6">
-                            Extraordinary Landscapes
+                            Our Experiences
                         </h2>
                         <p className="text-neutral-600 text-lg">
                             Immersive journeys across Africa&apos;s most extraordinary landscapes.
