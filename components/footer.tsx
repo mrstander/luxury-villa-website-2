@@ -53,18 +53,20 @@ export function Footer() {
             </h3>
             <div className="flex flex-col gap-4">
               <a
-                href="mailto:reservations@wildhorizons.co.za"
+                href="mailto:ansomari@namasands.co.za"
                 className="inline-flex items-center gap-3 text-sm text-[#f5f0e8]/50 transition-colors duration-300 hover:text-[#c9a96e]"
               >
                 <Mail size={16} className="shrink-0" />
-                info@namasands.co.za
+                ansomari@namasands.co.za
+
+
               </a>
               <a
-                href="tel:+27000000000"
+                href="tel:+2783 2348606"
                 className="inline-flex items-center gap-3 text-sm text-[#f5f0e8]/50 transition-colors duration-300 hover:text-[#c9a96e]"
               >
                 <Phone size={16} className="shrink-0" />
-                +27 (0) 00 000 0000
+                083 2348606
               </a>
               <span className="inline-flex items-start gap-3 text-sm text-[#f5f0e8]/50">
                 <MapPin size={16} className="mt-0.5 shrink-0" />

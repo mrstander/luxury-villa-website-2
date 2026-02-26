@@ -82,7 +82,7 @@ export default function VillaPage() {
             <BookingSearchBlock />
 
             {/* ================= INTRO SECTION ================= */}
-            <section className="max-w-6xl mx-auto px-6 py-28 md:py-36">
+            <section className="max-w-6xl mx-auto px-6 py-12 md:py-12">
                 <div className="grid md:grid-cols-2 gap-16 items-center">
 
                     <div>
@@ -100,13 +100,16 @@ export default function VillaPage() {
                             interiors and panoramic views create a sanctuary immersed
                             in wilderness.
                         </p>
+                        <Link href="/images/rate.jpeg" className="inline-flex items-center justify-center border border-black/10 px-6 py-3 text-[10px] uppercase tracking-[0.3em] font-bold transition-all duration-300 hover:bg-[#c9a96e] hover:border-[#c9a96e] hover:text-[#2a2318]">
+                            View Rate Card
+                        </Link>
 
                     </div>
 
                     {/* ✅ FEATURE IMAGE WITH 5px RADIUS */}
                     <div className="relative h-[500px] rounded-[5px] overflow-hidden">
                         <Image
-                            src="/images/villa/villa5.jpg"
+                            src="/images/villa/villa-bath.jpeg"
                             alt="Villa Deck View"
                             fill
                             className="object-cover"
@@ -117,7 +120,7 @@ export default function VillaPage() {
             </section>
 
             {/* ================= FEATURES ================= */}
-            <section className="max-w-6xl mx-auto px-6 pb-32">
+            <section className="max-w-6xl mx-auto px-6 py-12 md:py-12">
                 <div className="text-center mb-16">
                     <h3 className="font-serif italic text-3xl md:text-4xl mb-4">
                         Facilities

@@ -4,31 +4,33 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
     title: "Experiences | Nama Sands",
-    description: "Immersive journeys across Africa's most extraordinary landscapes.",
+    description: "Immersive journeys across Africa's most immersive activities available on request.",
 }
 
 const experiences = [
     {
         title: "Game Drives",
         description:
-            "Experience the thrill of a safari game drive with our expert guides. Encounter zebra, giraffe, eland, wildebeest and more across vast open landscapes.",
-        image: "/images/game.jpg",
-        guests: "4 Guests",
-        duration: "2 Hours",
-        type: "Private",
-        price: "From R100.00",
-        link: "/contact",
+            "Experience the thrill of a game drive with our experienced guide. Encounter zebra, giraffe, eland, wildebeest and more across vast open fynbos landscapes.",
+        image: "/images/gamedrive.jpeg",
     },
     {
-        title: "Botswana: Okavango Delta Expedition",
+        title: "Spa Treatments",
         description:
-            "Experience Kenya's stunning landscapes with the Maasai community. Hike scenic trails and immerse yourself in rich traditions.",
-        image: "/images/fire.jpg",
-        guests: "4 Guests",
-        duration: "12 Days",
-        type: "Private",
-        price: "From R100.00",
-        link: "/contact",
+            "Enjoy private spa treatments in the comfort of your own suite, where relaxation comes to you. From restorative massages to tailored wellness treatments, restore body and mind in complete privacy and effortless luxury",
+        image: "/images/spa.jpeg",
+    },
+    {
+        title: "Private chef",
+        description:
+            "Enjoy the luxury of a private chef crafting personalised culinary experiences in the comfort of your villa. From leisurely breakfasts to beautifully prepared dinners. ",
+        image: "/images/chef.jpeg",
+    },
+    {
+        title: "Trail Walk",
+        description:
+            "Explore the rich fauna and flora on guided trail walks led by our experienced guides. From intricate plant life to wildlife tracks and hidden natural wonders, each walk offers a deeper understanding of the ecosystem. It’s a slow, immersive experience that connects you intimately with the land and its living tapestry.",
+        image: "/images/trail2.jpeg",
     },
 ]
 
@@ -59,62 +61,41 @@ export default function ExperiencesPage() {
 
             {/* ================= CONTENT ================= */}
             <section className="py-24 md:py-32">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    {/* Page Heading */}
-                    <div className="text-center mb-16">
-                        <h2 className="font-serif text-3xl md:text-5xl italic font-light text-black/80">
+                <div className="mx-auto max-w-7xl px-6 lg:px-10">
+                    <div className="text-center mb-20 max-w-3xl mx-auto">
+                        <h2 className="font-serif text-3xl md:text-5xl italic font-light text-black/80 mb-6">
                             Extraordinary Landscapes
                         </h2>
-                        <p className="mt-4 text-neutral-600 max-w-2xl mx-auto">
-                            Immersive journeys across Africa’s most extraordinary landscapes.
+                        <p className="text-neutral-600 text-lg">
+                            Immersive journeys across Africa&apos;s most extraordinary landscapes.
                         </p>
                     </div>
 
-                    {/* Experience Cards */}
-                    <div className="space-y-20">
+                    <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
                         {experiences.map((exp, index) => (
                             <div
                                 key={index}
-                                className="relative h-[70vh] md:h-[80vh] rounded-[5px] overflow-hidden shadow-xl"
+                                className="group relative flex flex-col bg-white overflow-hidden rounded-[5px] shadow-sm hover:shadow-xl transition-shadow duration-500"
                             >
-                                {/* Image */}
-                                <Image
-                                    src={exp.image}
-                                    alt={exp.title}
-                                    fill
-                                    className="object-cover"
-                                    priority
-                                />
-
-                                {/* Gradient Overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
+                                {/* Image Container */}
+                                <div className="relative h-72 w-full overflow-hidden">
+                                    <Image
+                                        src={exp.image}
+                                        alt={exp.title}
+                                        fill
+                                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                    />
+                                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500" />
+                                </div>
 
                                 {/* Content */}
-                                <div className="absolute inset-0 flex items-center">
-                                    <div className="max-w-xl px-10 md:px-16 text-white">
-                                        <h2 className="font-serif text-3xl md:text-5xl italic font-light leading-tight mb-6">
-                                            {exp.title}
-                                        </h2>
-
-                                        <p className="mb-6 opacity-90">
-                                            {exp.description}
-                                        </p>
-
-                                        {/* Meta Info */}
-                                        <div className="flex flex-wrap gap-6 text-sm uppercase tracking-widest mb-6 opacity-80">
-                                            <span>{exp.guests}</span>
-                                            <span>{exp.duration}</span>
-                                            <span>{exp.type}</span>
-                                            <span>{exp.price}</span>
-                                        </div>
-
-                                        <Link
-                                            href={exp.link}
-                                            className="inline-block border border-white px-8 py-3 text-xs uppercase tracking-[0.3em] transition-all duration-300 hover:bg-white hover:text-black"
-                                        >
-                                            View Details
-                                        </Link>
-                                    </div>
+                                <div className="flex flex-1 flex-col p-8">
+                                    <h3 className="font-serif text-2xl mb-4 italic text-black/90">
+                                        {exp.title}
+                                    </h3>
+                                    <p className="text-neutral-600 mb-2 flex-1 leading-relaxed">
+                                        {exp.description}
+                                    </p>
                                 </div>
                             </div>
                         ))}

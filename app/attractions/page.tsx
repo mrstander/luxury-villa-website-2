@@ -34,7 +34,7 @@ export default function AttractionsPage() {
             {/* ================= HERO ================= */}
             <section className="relative h-[100vh] min-h-[450px] pt-24">
                 <Image
-                    src="/images/game.jpg"
+                    src="/images/local.jpeg"
                     alt="Scenic view of the West Coast landscapes"
                     fill
                     priority
@@ -61,7 +61,7 @@ export default function AttractionsPage() {
                             The Best of the West Coast
                         </h2>
                         <p className="text-neutral-600 text-lg">
-                            Nama Sands serves as the perfect base for exploring some of South Africa&apos;s most iconic coastal landmarks and cultural heritage sites.
+                            Nama Sands serves as the perfect base for exploring the charm and character of the West Coast. From the wildflower displays of the West Coast National Park to the turquoise waters of Langebaan Lagoon, quaint seaside villages, local markets, art galleries and fresh seafood spots are all within easy reach. It’s an ideal starting point for discovering the region’s natural beauty, rich heritage and laid-back coastal culture — all just a short drive from your doorstep.
                         </p>
                     </div>
 
