@@ -9,21 +9,27 @@ export const metadata: Metadata = {
 
 const attractions = [
     {
-        title: "West Coast National Park",
-        description: "A sanctuary of turquoise lagoons, white dunes, and (in season) a wild carpet of spring flowers. Perfect for hiking, bird watching, and swimming.",
-        image: "/images/tab.jpg",
+        title: "Darling (wine farms, local breweries, markets)",
+
+        image: "/images/darling.jpeg",
         location: "https://www.google.com/maps/place/West+Coast+National+Park",
     },
     {
-        title: "Paternoster",
-        description: "One of the oldest fishing villages on the West Coast. Renowned for its white-washed cottages, pristine beaches, and world-class seafood.",
-        image: "/images/wine.jpg",
+        title: "Langebaan Lagoon & Saldanha Bay",
+
+        image: "/images/langebaan.jpeg",
         location: "https://www.google.com/maps/place/Paternoster",
     },
     {
-        title: "!Khwa ttu Heritage Centre",
-        description: "A unique destination that celebrates San culture and heritage through guided tours, art exhibitions, and educational trails.",
-        image: "/images/fire.jpg",
+        title: "Paternoster & West Coast coastlines",
+
+        image: "/images/paternoster.jpeg",
+        location: "https://www.khwattu.org/",
+    },
+    {
+        title: "Wine Routes - Darling /Riebeeck/Swartland and West Coast region",
+
+        image: "/images/winefarm.jpeg",
         location: "https://www.khwattu.org/",
     },
 ]
@@ -87,9 +93,7 @@ export default function AttractionsPage() {
                                     <h3 className="font-serif text-2xl mb-4 italic text-black/90">
                                         {spot.title}
                                     </h3>
-                                    <p className="text-neutral-600 mb-8 flex-1 leading-relaxed">
-                                        {spot.description}
-                                    </p>
+
                                     <Link
                                         href={spot.location}
                                         target="_blank"
