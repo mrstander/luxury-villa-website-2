@@ -51,7 +51,7 @@ export default function ContactPage() {
                                         <div>
                                             <p className="text-[10px] uppercase tracking-widest text-black/40">Email</p>
                                             <a href="mailto:bookings@namasands.com" className="text-lg hover:text-[#c9a96e] transition-colors">
-                                                bookings@namasands.com
+                                                ansomari@namasands.co.za
                                             </a>
                                         </div>
                                     </div>
@@ -63,7 +63,7 @@ export default function ContactPage() {
                                         <div>
                                             <p className="text-[10px] uppercase tracking-widest text-black/40">Phone</p>
                                             <a href="tel:+27821234567" className="text-lg hover:text-[#c9a96e] transition-colors">
-                                                +27 (0) 82 123 4567
+                                                +27 (0) 83 2348606
                                             </a>
                                         </div>
                                     </div>
@@ -75,7 +75,6 @@ export default function ContactPage() {
                                         <div>
                                             <p className="text-[10px] uppercase tracking-widest text-black/40">Address</p>
                                             <p className="text-lg">
-                                                R27 Road, Hopefield<br />
                                                 Western Cape, South Africa
                                             </p>
                                         </div>

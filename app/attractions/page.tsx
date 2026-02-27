@@ -94,13 +94,7 @@ export default function AttractionsPage() {
                                         {spot.title}
                                     </h3>
 
-                                    <Link
-                                        href={spot.location}
-                                        target="_blank"
-                                        className="inline-flex items-center justify-center border border-black/10 px-6 py-3 text-[10px] uppercase tracking-[0.3em] font-bold transition-all duration-300 hover:bg-[#c9a96e] hover:border-[#c9a96e] hover:text-[#2a2318]"
-                                    >
-                                        View Location
-                                    </Link>
+
                                 </div>
                             </div>
                         ))}

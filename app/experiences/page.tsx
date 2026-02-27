@@ -67,7 +67,7 @@ export default function ExperiencesPage() {
                             Our Experiences
                         </h2>
                         <p className="text-neutral-600 text-lg">
-                            Immersive journeys across Africa&apos;s most extraordinary landscapes.
+                            Immersive activities available on request.
                         </p>
                     </div>
 
