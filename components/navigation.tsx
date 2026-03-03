@@ -43,9 +43,9 @@ export function Navigation() {
             <Image
               src="/images/logo2.png"
               alt="Nama Sands Logo"
-              width={100}
-              height={70}
-              className="object-contain w-[80px] lg:w-[90px] xl:w-[120px] cursor-pointer"
+              width={120}
+              height={85}
+              className="object-contain w-[100px] sm:w-[120px] lg:w-[90px] xl:w-[120px] cursor-pointer"
               priority
             />
           </Link>
@@ -53,10 +53,10 @@ export function Navigation() {
           {/* Mobile Menu Button (Text based, below logo) */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden text-[11px] uppercase tracking-[0.4em] text-[#f5f0e8]/80 transition-colors hover:text-[#e6c97c]"
+            className="lg:hidden text-[10px] sm:text-[11px] font-medium uppercase tracking-[0.5em] text-[#e6c97c] transition-all duration-300 hover:text-white"
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? "CLOSE" : "MENU"}
+            {isMobileMenuOpen ? "CLOSE" : "EXPLORE MENU"}
           </button>
 
           {/* Desktop Navigation */}
