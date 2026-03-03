@@ -20,7 +20,7 @@ const lato = Lato({
 })
 
 export const metadata: Metadata = {
-  title: 'Nama Sands | Wild Horizons. Private Luxury.',
+  title: 'Nama Sands Safari Reserve | Private Luxury Villa',
   description:
     'Nama Sands — a private luxury villa and conservation reserve in the Western Cape, South Africa. Experience untamed wilderness and private luxury.',
 }

@@ -8,7 +8,6 @@ export function OurStory() {
   const { ref, isInView } = useInView()
 
   return (
-
     <section className="py-24 md:py-32">
       <div className="mx-auto max-w-3xl px-6 lg:px-10 text-center">
 
@@ -19,12 +18,15 @@ export function OurStory() {
 
         {/* Heading */}
         <h2 className="mb-10 font-serif text-4xl font-light md:text-5xl lg:text-6xl">
-          The Story of <span className="italic">Nama Sands</span>
+          The Story of <br />
+          <span className="italic">
+            Nama Sands
+          </span>
         </h2>
 
         {/* Content */}
         <p className="mb-8 text-lg leading-relaxed text-black/70 md:text-xl">
-          Nama Sands was born from a vision — a vision rooted in conservation,
+          Nama Sands was born from a vision rooted in conservation,
           responsibility, and a deep respect for the land.
         </p>
 

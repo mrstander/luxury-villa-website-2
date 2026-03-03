@@ -42,7 +42,7 @@ export function LaunchSpecial() {
           <div className="mx-auto my-6 h-px w-16 bg-[#2a2318]/30" />
 
           <p className="mb-2 font-serif text-xl font-light text-[#2a2318] md:text-3xl lg:text-4xl">
-            R14,000
+            R15,000
           </p>
 
           <p className="mb-1 text-sm uppercase tracking-[0.2em] text-[#2a2318]/70">
@@ -50,7 +50,7 @@ export function LaunchSpecial() {
           </p>
 
           <p className="mb-8 text-sm text-[#2a2318]/60">
-            Valid until end of March 2026
+            Valid until end of March 2026, 3 Nights min.
           </p>
 
           <a

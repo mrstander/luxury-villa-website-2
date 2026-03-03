@@ -35,67 +35,50 @@ export function Navigation() {
           : "bg-transparent"
           }`}
       >
-        {/* ✅ Mobile 65px | Desktop 120px (increased for bigger logo) */}
-        <div className="mx-auto flex h-[65px] lg:h-[120px] max-w-7xl items-center px-4 lg:px-10">
+        {/* Container: Stacked on mobile (col), Row on desktop (row) */}
+        <div className="mx-auto flex flex-col items-center justify-center gap-4 py-6 px-4 lg:h-[150px] lg:flex-row lg:justify-between lg:gap-0 lg:py-0 lg:px-10 max-w-7xl">
 
-          {/* Desktop Left Nav */}
-          <nav className="hidden lg:flex flex-1 items-center justify-end gap-8 pr-12">
-            {navLinks.slice(0, 3).map((link) => (
+          {/* Logo - Centered on Mobile, Left on Desktop */}
+          <Link href="/" aria-label="Go to homepage" className="flex items-center justify-center">
+            <Image
+              src="/images/logo2.png"
+              alt="Nama Sands Logo"
+              width={100}
+              height={70}
+              className="object-contain w-[80px] lg:w-[90px] xl:w-[120px] cursor-pointer"
+              priority
+            />
+          </Link>
+
+          {/* Mobile Menu Button (Text based, below logo) */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="lg:hidden text-[11px] uppercase tracking-[0.4em] text-[#f5f0e8]/80 transition-colors hover:text-[#e6c97c]"
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? "CLOSE" : "MENU"}
+          </button>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden items-center gap-4 xl:gap-8 lg:flex">
+            {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm uppercase tracking-wider text-[#f5f0e8]/90 transition-colors duration-300 hover:text-[#e6c97c]"
+                className="text-[11px] xl:text-sm uppercase tracking-wider text-[#f5f0e8]/90 transition-colors duration-300 hover:text-[#e6c97c] whitespace-nowrap"
               >
                 {link.label}
               </a>
             ))}
           </nav>
 
-          {/* Logo - Centered */}
-          <div className="flex flex-1 lg:flex-none justify-center">
-            <Link href="/" aria-label="Go to homepage">
-              <Image
-                src="/images/logo.png"
-                alt="Wild Horizons Logo"
-                width={200}
-                height={100}
-                className="object-contain w-[140px] lg:w-[280px] cursor-pointer transition-all duration-500"
-                priority
-              />
-            </Link>
-          </div>
-
-          {/* Desktop Right Nav + CTA */}
-          <div className="hidden lg:flex flex-1 items-center gap-8 pl-12">
-            <nav className="flex items-center gap-8">
-              {navLinks.slice(3).map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="text-sm uppercase tracking-wider text-[#f5f0e8]/90 transition-colors duration-300 hover:text-[#e6c97c]"
-                >
-                  {link.label}
-                </a>
-              ))}
-            </nav>
-            <a
-              href="/villa"
-              className="border border-[#e6c97c] px-5 py-2 text-sm uppercase tracking-wide text-[#e6c97c] rounded-md transition-all duration-300 hover:bg-[#e6c97c] hover:text-[#2a2318]"
-            >
-              Book Now
-            </a>
-          </div>
-
-          {/* Mobile Menu Toggle (Right side on mobile) */}
-          <div className="flex lg:hidden flex-1 justify-end">
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-[#f5f0e8] w-[40px] h-[40px] flex items-center justify-center rounded-md hover:bg-white/10 transition"
-              aria-label="Toggle menu"
-            >
-              {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
-            </button>
-          </div>
+          {/* Desktop CTA */}
+          <a
+            href="/villa"
+            className="hidden lg:inline-block border border-[#e6c97c] px-4 py-2 text-[11px] xl:text-sm uppercase tracking-wide text-[#e6c97c] rounded-md transition-all duration-300 hover:bg-[#e6c97c] hover:text-[#2a2318]"
+          >
+            Book Now
+          </a>
         </div>
       </header>
 

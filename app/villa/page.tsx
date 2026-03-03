@@ -120,7 +120,7 @@ export default function VillaPage() {
                         </p>
 
                         <Link
-                            href="/images/rate.jpeg"
+                            href="/images/gallery/ratecard.jpeg"
                             className="inline-flex items-center justify-center border border-black/10 px-6 py-3 text-[10px] uppercase tracking-[0.3em] font-bold transition-all duration-300 hover:bg-[#c9a96e] hover:border-[#c9a96e] hover:text-[#2a2318]"
                         >
                             View Rate Card
