@@ -18,7 +18,7 @@ export function Hero() {
       {/* Background Video */}
       {/* Background Video (YouTube) */}
       <div className="absolute inset-0 size-full overflow-hidden">
-        {/* Mobile Hero Image */}
+        {/* Mobile Hero Image with Gradient Overlay */}
         <div className="block lg:hidden absolute inset-0 size-full">
           <Image
             src="/images/Hero.jpg"
@@ -27,6 +27,8 @@ export function Hero() {
             className="object-cover"
             priority
           />
+          {/* Top-down gradient for logo/nav visibility */}
+          <div className="absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-black/80 via-black/40 to-transparent" />
         </div>
 
         {/* Desktop Hero Video */}
