@@ -187,7 +187,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-3xl px-6 lg:px-10">
           <div className="mb-10 h-px w-16 bg-[#c9a96e] mx-auto" />
           <blockquote className="font-serif text-2xl font-light leading-relaxed md:text-3xl">
-            “We believe that the land does not belong to us — we belong to the
+            “We believe that the land does not belong to us, we belong to the
             land. Our role is simply to be its custodians.”
           </blockquote>
           <p className="mt-8 text-xs uppercase tracking-[0.4em] text-[#c9a96e]">

@@ -37,7 +37,7 @@ const faqData = {
         },
         {
             question: "Is it malaria free?",
-            answer: "No.",
+            answer: "Yes.",
         },
     ],
     accommodation: [

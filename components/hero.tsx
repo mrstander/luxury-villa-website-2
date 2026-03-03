@@ -29,20 +29,7 @@ export function Hero() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center px-6 text-center">
-        {/* Decorative line */}
-        <div
-          className={`mb-8 h-16 w-px bg-[#c9a96e]/60 transition-all duration-1000 ${isLoaded ? "opacity-100" : "h-0 opacity-0"
-            }`}
-        />
 
-        <p
-          className={`mb-4 text-xs uppercase tracking-[0.5em] text-[#c9a96e] transition-all delay-300 duration-1000 ${isLoaded
-            ? "translate-y-0 opacity-100"
-            : "translate-y-4 opacity-0"
-            }`}
-        >
-          An Exclusive Retreat
-        </p>
 
         <h1
           className={`font-serif text-5xl font-light leading-tight tracking-wide text-[#f5f0e8] transition-all delay-500 duration-1000 sm:text-6xl md:text-7xl lg:text-8xl ${isLoaded
@@ -50,7 +37,7 @@ export function Hero() {
             : "translate-y-6 opacity-0"
             }`}
         >
-          <span className="block text-balance">Wild Horizons.</span>
+
           <span className="block italic text-[#c9a96e]">Private Luxury.</span>
         </h1>
 

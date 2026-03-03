@@ -35,24 +35,12 @@ export function Navigation() {
           : "bg-transparent"
           }`}
       >
-        {/* ✅ Mobile 55px | Desktop 70px */}
-        <div className="mx-auto flex h-[55px] lg:h-[80px] max-w-7xl items-center justify-between px-4 lg:px-10">
+        {/* ✅ Mobile 65px | Desktop 120px (increased for bigger logo) */}
+        <div className="mx-auto flex h-[65px] lg:h-[120px] max-w-7xl items-center px-4 lg:px-10">
 
-          {/* Logo */}
-          <Link href="/" aria-label="Go to homepage">
-            <Image
-              src="/images/logo.png"
-              alt="Wild Horizons Logo"
-              width={160}
-              height={80}
-              className="object-contain lg:w-[220px] cursor-pointer"
-              priority
-            />
-          </Link>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden items-center gap-8 lg:flex">
-            {navLinks.map((link) => (
+          {/* Desktop Left Nav */}
+          <nav className="hidden lg:flex flex-1 items-center justify-end gap-8 pr-12">
+            {navLinks.slice(0, 3).map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -63,20 +51,46 @@ export function Navigation() {
             ))}
           </nav>
 
-          {/* CTA + Mobile Toggle */}
-          <div className="flex items-center gap-3">
-            {/* Desktop CTA */}
+          {/* Logo - Centered */}
+          <div className="flex flex-1 lg:flex-none justify-center">
+            <Link href="/" aria-label="Go to homepage">
+              <Image
+                src="/images/logo.png"
+                alt="Wild Horizons Logo"
+                width={200}
+                height={100}
+                className="object-contain w-[140px] lg:w-[280px] cursor-pointer transition-all duration-500"
+                priority
+              />
+            </Link>
+          </div>
+
+          {/* Desktop Right Nav + CTA */}
+          <div className="hidden lg:flex flex-1 items-center gap-8 pl-12">
+            <nav className="flex items-center gap-8">
+              {navLinks.slice(3).map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm uppercase tracking-wider text-[#f5f0e8]/90 transition-colors duration-300 hover:text-[#e6c97c]"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </nav>
             <a
               href="/villa"
-              className="hidden border border-[#e6c97c] px-5 py-2 text-sm uppercase tracking-wide text-[#e6c97c] rounded-md transition-all duration-300 hover:bg-[#e6c97c] hover:text-[#2a2318] sm:inline-block"
+              className="border border-[#e6c97c] px-5 py-2 text-sm uppercase tracking-wide text-[#e6c97c] rounded-md transition-all duration-300 hover:bg-[#e6c97c] hover:text-[#2a2318]"
             >
               Book Now
             </a>
+          </div>
 
-            {/* Mobile Menu Button */}
+          {/* Mobile Menu Toggle (Right side on mobile) */}
+          <div className="flex lg:hidden flex-1 justify-end">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-[#f5f0e8] lg:hidden w-[40px] h-[40px] flex items-center justify-center rounded-md hover:bg-white/10 transition"
+              className="text-[#f5f0e8] w-[40px] h-[40px] flex items-center justify-center rounded-md hover:bg-white/10 transition"
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
