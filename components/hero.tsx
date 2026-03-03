@@ -18,12 +18,27 @@ export function Hero() {
       {/* Background Video */}
       {/* Background Video (YouTube) */}
       <div className="absolute inset-0 size-full overflow-hidden">
-        <iframe
-          src="https://www.youtube.com/embed/3cXrPv-adi0?autoplay=1&mute=1&loop=1&playlist=3cXrPv-adi0&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1"
-          className="absolute inset-x-0 top-1/2 min-h-full min-w-full -translate-y-1/2 pointer-events-none aspect-video scale-[3.5] lg:scale-[1.3]"
-          allow="autoplay; fullscreen"
-          title="Hero Video"
-        />
+        {/* Mobile Hero Image */}
+        <div className="block lg:hidden absolute inset-0 size-full">
+          <Image
+            src="/images/Hero.jpg"
+            alt="Luxury Villa Hero"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+
+        {/* Desktop Hero Video */}
+        <div className="hidden lg:block absolute inset-0 size-full">
+          <iframe
+            src="https://www.youtube.com/embed/3cXrPv-adi0?autoplay=1&mute=1&loop=1&playlist=3cXrPv-adi0&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1"
+            className="absolute inset-x-0 top-1/2 min-h-full min-w-full -translate-y-1/2 pointer-events-none aspect-video scale-[1.3]"
+            allow="autoplay; fullscreen"
+            title="Hero Video"
+          />
+        </div>
+
         <div className="absolute inset-0 bg-[#1a1610]/40" />
       </div>
 
