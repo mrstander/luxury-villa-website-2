@@ -1,9 +1,14 @@
-"use client"
+
 
 import * as React from "react"
 import Image from "next/image"
+import type { Metadata } from "next"
 import Link from "next/link"
-import { BookingSearchBlock } from "@/components/booking-search-block"
+
+export const metadata: Metadata = {
+    title: "The Villa",
+    description: "Refined luxury immersed in fynbos landscapes and panoramic valley views. Discover the features and facilities of our private luxury villa.",
+}
 
 import {
     Flame,

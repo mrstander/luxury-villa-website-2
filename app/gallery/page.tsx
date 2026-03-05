@@ -1,10 +1,12 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
+import type { Metadata } from "next"
 
-
-
+export const metadata: Metadata = {
+    title: "Gallery",
+    description: "A visual journey through Nama Sands. Discover curated moments of architecture, wilderness, and luxury experiences.",
+}
 
 const images = [
     "/images/local.jpeg",
