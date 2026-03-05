@@ -42,10 +42,10 @@ export default function TermsPage() {
                         <div className="space-y-12">
                             <section>
                                 <h3 className="text-xs uppercase tracking-[0.3em] text-[#c9a96e] mb-4">1. Check-In & Check-Out</h3>
-                                <ul className="list-none space-y-2 pl-0">
+                                <ul className="list-none space-y-2 pl-0 text-neutral-600">
                                     <li><strong>Check-in:</strong> 14:00</li>
-                                    <li><strong>Check-out:</strong> 11:00</li>
-                                    <li className="text-neutral-600">Early arrivals and late departures are subject to availability and prior arrangement.</li>
+                                    <li><strong>Check-out:</strong> 10:00</li>
+                                    <li>Early arrivals and late departures are subject to availability and prior arrangement.</li>
                                 </ul>
                             </section>
 
@@ -104,17 +104,24 @@ export default function TermsPage() {
                             <section>
                                 <h3 className="text-xs uppercase tracking-[0.3em] text-[#c9a96e] mb-4">8. Emergency Contacts</h3>
                                 <ul className="list-none space-y-2 pl-0 text-neutral-600">
-                                    <li><strong>On-site Manager:</strong> [Contact Details to be Added]</li>
-                                    <li><strong>Emergency Services:</strong> [Contact Details to be Added]</li>
+                                    <li><strong>On-site Manager:</strong> Thomas Malan 082 873 4580</li>
                                 </ul>
                             </section>
 
                             <section>
                                 <h3 className="text-xs uppercase tracking-[0.3em] text-[#c9a96e] mb-4">9. Cancellation Policy</h3>
                                 <ul className="list-none space-y-2 pl-0 text-neutral-600">
-                                    <li>Cancellations made [Number] days prior to arrival will receive [Percentage]% refund.</li>
-                                    <li>Cancellations within [Number] days of arrival are non-refundable.</li>
+                                    <li>Cancellations made 30 days prior to arrival will receive 50% refund.</li>
+                                    <li>Cancellations within 29 days of arrival are non-refundable.</li>
                                     <li>No-shows will be charged in full.</li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h3 className="text-xs uppercase tracking-[0.3em] text-[#c9a96e] mb-4">10. Environment & Quiet Hours</h3>
+                                <ul className="list-none space-y-2 pl-0 text-neutral-600">
+                                    <li>Guests are requested to respect the surrounding environment and neighbouring properties at all times.</li>
+                                    <li>Quiet hours apply between 23:00 and 06:00AM.</li>
                                 </ul>
                             </section>
                         </div>

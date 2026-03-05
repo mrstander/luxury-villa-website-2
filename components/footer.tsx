@@ -85,12 +85,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Nama Sands Safari Reserve. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a
-              href="#"
-              className="text-xs text-[#f5f0e8]/30 transition-colors hover:text-[#c9a96e]"
-            >
-              Privacy Policy
-            </a>
+
             <a
               href="/terms"
               className="text-xs text-[#f5f0e8]/30 transition-colors hover:text-[#c9a96e]"
