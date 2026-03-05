@@ -26,18 +26,20 @@ export function OurStory() {
 
         {/* Content */}
         <p className="mb-8 text-lg leading-relaxed text-black/70 md:text-xl">
-          Nama Sands was born from a vision rooted in conservation,
+          Nama Sands was born from a vision… a vision rooted in conservation,
           responsibility, and a deep respect for the land.
+
         </p>
 
         <p className="mb-8 text-lg leading-relaxed text-black/70 md:text-xl">
-          In the early 17th century, overexploitation dramatically reduced
-          wildlife numbers across the Western Cape, changing the landscape and
-          ecosystems forever.
+          n the early 17th century, overexploitation dramatically reduced wildlife
+          numbers across the Western Cape, changing the landscape and ecosystems
+          forever.
+
         </p>
 
         <p className="text-lg leading-relaxed text-black/70 md:text-xl">
-          Founded by passionate conservationists who believed in sustainable
+          Founded by passionate conservationists who believed in the sustainable
           stewardship of the land, Nama Sands became a sanctuary where wildlife
           could return, thrive, and coexist with people in harmony.
         </p>
