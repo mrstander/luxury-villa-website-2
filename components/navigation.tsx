@@ -35,11 +35,14 @@ export function Navigation() {
           : "bg-transparent"
           }`}
       >
-        {/* Container: Stacked on mobile (col), Row on desktop (row) */}
-        <div className="mx-auto flex flex-col items-center justify-center gap-4 py-6 px-4 lg:h-[150px] lg:flex-row lg:justify-between lg:gap-0 lg:py-0 lg:px-10 max-w-7xl">
+        {/* Container */}
+        <div className="mx-auto grid grid-cols-[1fr_auto_1fr] items-center py-4 px-4 lg:flex lg:h-[150px] lg:justify-between lg:py-0 lg:px-10 max-w-7xl w-full">
+
+          {/* Left space for mobile grid alignment */}
+          <div className="lg:hidden"></div>
 
           {/* Logo - Centered on Mobile, Left on Desktop */}
-          <Link href="/" aria-label="Go to homepage" className="flex items-center justify-center">
+          <Link href="/" aria-label="Go to homepage" className="flex items-center justify-center lg:justify-start">
             <Image
               src="/images/logo2.png"
               alt="Nama Sands Logo"
@@ -50,14 +53,16 @@ export function Navigation() {
             />
           </Link>
 
-          {/* Mobile Menu Button (Text based, below logo) */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden text-[10px] sm:text-[11px] font-medium uppercase tracking-[0.5em] text-[#e6c97c] transition-all duration-300 hover:text-white"
-            aria-label="Toggle menu"
-          >
-            {isMobileMenuOpen ? "CLOSE" : "EXPLORE MENU"}
-          </button>
+          {/* Mobile Menu Button (Hamburger) */}
+          <div className="flex justify-end lg:hidden">
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="text-[#e6c97c] transition-all duration-300 hover:text-white p-2"
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden items-center gap-4 xl:gap-8 lg:flex">

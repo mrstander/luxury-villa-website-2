@@ -31,7 +31,7 @@ const experiences: Experience[] = [
   {
     title: "Private Chef",
     description:
-      "You can book a one-night luxury dining experience prepared by your own private chef (breakfast not included). To enhance your stay, you’re also welcome to add a breakfast basket or braai basket.",
+      "Enhance your stay with a special one-night luxury dining experience prepared by your own private chef in the comfort of your villa. Enjoy a beautifully curated dinner without lifting a finger. You are also welcome to pre-book one of our thoughtfully prepared baskets. Choose from a delicious breakfast basket or a traditional braai basket.",
     detail:
       "It's grounding, meditative, and soaked in natural wonder.",
     image: "/images/chef.jpeg",
