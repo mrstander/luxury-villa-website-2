@@ -83,7 +83,7 @@ export default function VillaPage() {
                 <div className="absolute inset-0 bg-black/50" />
 
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
-                    <p className="uppercase tracking-[0.4em] text-xs md:text-sm mb-6 opacity-80">
+                    <p className="mb-6 text-xs uppercase tracking-[0.5em] text-[#c9a96e]">
                         Exclusive Safari Escape
                     </p>
 
