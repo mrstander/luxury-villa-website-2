@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -17,6 +18,8 @@ const navLinks = [
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const isHomepage = pathname === "/"
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,10 +42,10 @@ export function Navigation() {
         <div className="mx-auto grid grid-cols-[1fr_auto_1fr] items-center py-4 px-4 lg:flex lg:h-[150px] lg:justify-between lg:py-0 lg:px-10 max-w-7xl w-full">
 
           {/* Left space for mobile grid alignment */}
-          <div className="lg:hidden"></div>
+          <div className="hidden col-start-1"></div>
 
           {/* Logo - Centered on Mobile, Left on Desktop */}
-          <Link href="/" aria-label="Go to homepage" className="flex items-center justify-center lg:justify-start">
+          <Link href="/" aria-label="Go to homepage" className={`col-start-2 items-center justify-center lg:justify-start ${isHomepage && !isScrolled ? "hidden lg:flex" : "flex"}`}>
             <Image
               src="/images/logo2.png"
               alt="Nama Sands Logo"
@@ -54,7 +57,7 @@ export function Navigation() {
           </Link>
 
           {/* Mobile Menu Button (Hamburger) */}
-          <div className="flex justify-end lg:hidden">
+          <div className="col-start-3 flex justify-end lg:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-[#e6c97c] transition-all duration-300 hover:text-white p-2"

@@ -4,7 +4,6 @@ import { useEffect, useState } from "react"
 import { ChevronDown } from "lucide-react"
 import Image from "next/image"
 
-
 export function Hero() {
   const [isLoaded, setIsLoaded] = useState(false)
 
@@ -14,24 +13,25 @@ export function Hero() {
 
   return (
     <section className="relative flex h-screen items-center justify-center overflow-hidden">
-      {/* Background Image (video placeholder) */}
-      {/* Background Video */}
-      {/* Background Video (YouTube) */}
+
+      {/* Background */}
       <div className="absolute inset-0 size-full overflow-hidden">
-        {/* Mobile Hero Image with Gradient Overlay */}
+
+        {/* Mobile Image */}
         <div className="block lg:hidden absolute inset-0 size-full">
           <Image
             src="/images/Hero.jpg"
-            alt="Luxury Villa Hero"
+            alt="Nama Sands Hero"
             fill
             className="object-cover"
             priority
           />
-          {/* Top-down gradient for logo/nav visibility */}
+
+          {/* Gradient for navigation visibility */}
           <div className="absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-black/80 via-black/40 to-transparent" />
         </div>
 
-        {/* Desktop Hero Video */}
+        {/* Desktop Video */}
         <div className="hidden lg:block absolute inset-0 size-full">
           <iframe
             src="https://www.youtube.com/embed/3cXrPv-adi0?autoplay=1&mute=1&loop=1&playlist=3cXrPv-adi0&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1"
@@ -41,38 +41,52 @@ export function Hero() {
           />
         </div>
 
+        {/* Dark overlay */}
         <div className="absolute inset-0 bg-[#1a1610]/40" />
       </div>
 
-      {/* Content */}
+      {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center px-6 text-center">
 
-
-        <h1
-          className={`font-serif text-5xl font-light leading-tight tracking-wide text-[#f5f0e8] transition-all delay-500 duration-1000 sm:text-6xl md:text-7xl lg:text-8xl ${isLoaded
-            ? "translate-y-0 opacity-100"
-            : "translate-y-6 opacity-0"
+        {/* Logo */}
+        <div
+          className={`mb-4 transition-all duration-1000 delay-300 ${isLoaded ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
             }`}
         >
+          <Image
+            src="/images/logo_white.png"
+            alt="Nama Sands Logo"
+            width={320}
+            height={220}
+            className="object-contain w-[200px] sm:w-[240px] lg:w-[280px]"
+            priority
+          />
+        </div>
 
-          <span className="block italic text-[#c9a96e]">Private Luxury.</span>
-        </h1>
+        {/* Headline */}
+        <div className="flex flex-col items-center gap-2">
 
-        <p
-          className={`mt-6 max-w-lg text-sm leading-relaxed tracking-wide text-[#f5f0e8]/70 transition-all delay-700 duration-1000 md:text-base ${isLoaded
-            ? "translate-y-0 opacity-100"
-            : "translate-y-4 opacity-0"
-            }`}
-        >
-          Where untamed wilderness meets refined elegance. Your private sanctuary
-          awaits.
-        </p>
+          <h1
+            className={`font-serif text-4xl font-light leading-[1.05] tracking-wide text-[#f5f0e8] transition-all duration-1000 delay-500 sm:text-5xl md:text-6xl lg:text-7xl ${isLoaded ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
+              }`}
+          >
+            <span className="block italic text-white">
+              Private Luxury
+            </span>
+          </h1>
+
+          <h3
+            className={`text-xl tracking-[0.25em] uppercase text-white duration-1000 delay-700 md:text-base ${isLoaded ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
+              }`}
+          >
+            Wild Horizons
+          </h3>
+
+        </div>
 
         {/* CTA Buttons */}
         <div
-          className={`mt-10 flex flex-col items-center gap-4 transition-all delay-[900ms] duration-1000 sm:flex-row ${isLoaded
-            ? "translate-y-0 opacity-100"
-            : "translate-y-4 opacity-0"
+          className={`mt-8 flex flex-col items-center gap-4 transition-all duration-1000 delay-[900ms] sm:flex-row ${isLoaded ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
             }`}
         >
           <a
@@ -81,6 +95,7 @@ export function Hero() {
           >
             Check Availability
           </a>
+
           <a
             href="/about"
             className="border border-[#f5f0e8]/30 px-8 py-3.5 text-xs uppercase tracking-[0.25em] text-[#f5f0e8] transition-all duration-300 hover:border-[#f5f0e8]/60"
@@ -88,19 +103,23 @@ export function Hero() {
             Discover More
           </a>
         </div>
+
       </div>
 
-      {/* Scroll indicator */}
+      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
         <a
           href="#story"
           className="flex animate-bounce flex-col items-center gap-2 text-[#f5f0e8]/50 transition-colors hover:text-[#c9a96e]"
           aria-label="Scroll to explore"
         >
-          <span className="text-[10px] uppercase tracking-[0.3em]">Scroll</span>
+          <span className="text-[10px] uppercase tracking-[0.3em]">
+            Scroll
+          </span>
           <ChevronDown size={16} />
         </a>
       </div>
+
     </section>
   )
 }

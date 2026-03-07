@@ -26,9 +26,9 @@ export function OurStory() {
 
         {/* Content */}
         <p className="mb-8 text-lg leading-relaxed text-black/70 md:text-xl">
-          Nama Sands was born from a vision… a vision rooted in conservation,
-          responsibility, and a deep respect for the land.
-
+          Nama Sands was born from a vision rooted in conservation, responsibility,and a deep respect
+          <br className="block md:hidden" />
+          for the land.
         </p>
 
         <p className="mb-8 text-lg leading-relaxed text-black/70 md:text-xl">

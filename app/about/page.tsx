@@ -12,7 +12,7 @@ const images = [
 export const metadata: Metadata = {
   title: "Our Story | Nama Sands",
   description:
-    "Discover the story behind Nama Sands — a vision rooted in conservation, responsibility, and a deep respect for the land.",
+    "Discover the story behind Nama Sands, a vision rooted in conservation, responsibility, and a deep respect for the land.",
 }
 
 const wildlife = [
@@ -71,29 +71,40 @@ export default function AboutPage() {
       {/* ================= INTRO ================= */}
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-3xl px-6 lg:px-10 text-center">
-          <h2 className="mb-10 font-serif text-3xl font-light md:text-4xl">
-            <span className="italic">Nama Sands</span>
+
+          {/* Section Label */}
+          <p className="mb-3 text-xs uppercase tracking-[0.4em] text-[#c9a96e]">
+            Our Story
+          </p>
+
+          {/* Heading */}
+          <h2 className="mb-10 font-serif text-4xl font-light md:text-5xl lg:text-6xl">
+            The Story of <br />
+            <span className="italic">
+              Nama Sands
+            </span>
           </h2>
 
+          {/* Content */}
           <p className="mb-8 text-lg leading-relaxed text-black/70 md:text-xl">
-            Nama Sands was born from a vision — a vision rooted in conservation,
-            responsibility, and a deep respect for the land.
+            Nama Sands was born from a vision rooted in conservation, responsibility,and a deep respect
+            <br className="block md:hidden" />
+            for the land.
           </p>
 
           <p className="mb-8 text-lg leading-relaxed text-black/70 md:text-xl">
-            In the early 17th century, overexploitation dramatically reduced
-            wildlife populations across the Western Cape. Species that once
-            roamed freely through these landscapes became scarce, and fragile
-            ecosystems began to suffer.
+            n the early 17th century, overexploitation dramatically reduced wildlife
+            numbers across the Western Cape, changing the landscape and ecosystems
+            forever.
+
           </p>
 
           <p className="text-lg leading-relaxed text-black/70 md:text-xl">
-            In 1997, a dream began to take shape: to restore what had been lost,
-            to reintroduce species to their natural habitat, and to create a
-            sanctuary where fauna and flora could once again thrive in harmony.
-            <br />
-            Then, in 2013, the first farm was purchased — and the vision became reality.
+            Founded by passionate conservationists who believed in the sustainable
+            stewardship of the land, Nama Sands became a sanctuary where wildlife
+            could return, thrive, and coexist with people in harmony.
           </p>
+
         </div>
       </section>
 
@@ -140,13 +151,13 @@ export default function AboutPage() {
 
           <p className="mb-8 text-lg leading-relaxed text-black/70 md:text-xl">
             Based in Hopefield, the oldest town on the West Coast, Nama Sands
-            lies along the R27 between Malmesbury and Vredenburg — just over an
+            lies along the R27 between Malmesbury and Vredenburg,just over an
             hour from Cape Town in a malaria-free zone.
           </p>
 
           <p className="mb-8 text-lg leading-relaxed text-black/70 md:text-xl">
-            Spanning over 4,000 acres of diverse terrain — from forest and
-            rolling dunes to Cape Fynbos and open plains — the land is both
+            Spanning over 4,000 acres of diverse terrain,from forest and
+            rolling dunes to Cape Fynbos and open plains,the land is both
             dramatic and restorative.
           </p>
 
