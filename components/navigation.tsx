@@ -47,7 +47,7 @@ export function Navigation() {
           {/* Logo - Centered on Mobile, Left on Desktop */}
           <Link href="/" aria-label="Go to homepage" className={`col-start-2 items-center justify-center lg:justify-start ${isHomepage && !isScrolled ? "hidden lg:flex" : "flex"}`}>
             <Image
-              src="/images/logo_white.png"
+              src="/images/Logo_white.png"
               alt="Nama Sands Logo"
               width={120}
               height={85}
