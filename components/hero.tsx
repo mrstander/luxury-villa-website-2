@@ -54,7 +54,7 @@ export function Hero() {
             }`}
         >
           <Image
-            src="/images/logo_white.png"
+            src="/images/logo_gold.png"
             alt="Nama Sands Logo"
             width={320}
             height={220}
@@ -67,16 +67,16 @@ export function Hero() {
         <div className="flex flex-col items-center gap-2">
 
           <h1
-            className={`font-serif text-4xl font-light leading-[1.05] tracking-wide text-[#f5f0e8] transition-all duration-1000 delay-500 sm:text-5xl md:text-6xl lg:text-7xl ${isLoaded ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
+            className={`font-serif text-4xl font- leading-[1.05] tracking-wide text-[#f5f0e8] transition-all duration-1000 delay-500 sm:text-5xl md:text-6xl lg:text-7xl ${isLoaded ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
               }`}
           >
-            <span className="block italic text-white">
+            <span className="block italic text-[#c9a96e]">
               Private Luxury
             </span>
           </h1>
 
           <h3
-            className={`text-xl tracking-[0.25em] uppercase text-white duration-1000 delay-700 md:text-base ${isLoaded ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
+            className={`text-sm tracking-[0.25em] uppercase text-[#f5f0e8]/70 transition-all duration-1000 delay-700 md:text-base ${isLoaded ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
               }`}
           >
             Wild Horizons
