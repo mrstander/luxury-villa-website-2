@@ -58,7 +58,7 @@ export default function GalleryPage() {
                         Moments in Time
                     </h2>
                     <p className="text-neutral-600 text-lg leading-relaxed">
-                        Discover curated moments from Nama Sands,where architecture,
+                        Discover curated moments from Nama Sands, where architecture,
                         wilderness and experience merge into a timeless visual narrative.
                     </p>
                 </div>

@@ -63,7 +63,7 @@ export default function ContactPage() {
                                         <div>
                                             <p className="text-[10px] uppercase tracking-widest text-black/40">Phone</p>
                                             <a href="tel:+27821234567" className="text-lg hover:text-[#c9a96e] transition-colors">
-                                                +27 (0) 83 2348606
+                                                +27 (0) 83 234 8606
                                             </a>
                                         </div>
                                     </div>

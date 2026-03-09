@@ -11,19 +11,19 @@ const experiences = [
     {
         title: "Game Drives",
         description:
-            "Experience the thrill of a game drive with our experienced guide. Encounter zebra, giraffe, eland, wildebeest and more across vast open fynbos landscapes.",
+            "Experience the thrill of a game drive with our experienced guide. Encounter zebra, giraffe, eland, wildebeest and more across vast open fynbos landscapes. It's immersive, unhurried, and deeply connected to the land.",
         image: "/images/gamedrive.jpeg",
     },
     {
         title: "Spa Treatments",
         description:
-            "Enjoy private spa treatments in the comfort of your own suite, where relaxation comes to you. From restorative massages to tailored wellness treatments, restore body and mind in complete privacy and effortless luxury",
+            "Enjoy private massage treatments in the comfort of your own suite, where relaxation comes to you. Choose from a 45 minute back, neck and shoulder massage, a 60 minute Swedish massage, or a 60 minute deep tissue massage,each designed to ease tension, restore balance, and rejuvenate body and mind in complete privacy and effortless luxury. Peaceful,restorative, and deeply therapeutic, it’s a truly unique way to unwind in the bush.",
         image: "/images/spa.jpeg",
     },
     {
         title: "Private chef",
         description:
-            "Enjoy the luxury of a private chef crafting personalised culinary experiences in the comfort of your villa. From leisurely breakfasts to beautifully prepared dinners. ",
+            "Enhance your stay with a special one-night luxury dining experience prepared by your own private chef in the comfort of your villa. Enjoy a beautifully curated dinner without lifting a finger. You are also welcome to pre-book one of our thoughtfully prepared baskets. Choose from a delicious breakfast basket or a traditional braai basket. It's grounding, meditative, and soaked in natural wonder. ",
         image: "/images/chef.jpeg",
     },
     {

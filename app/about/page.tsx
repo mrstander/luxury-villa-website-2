@@ -93,7 +93,7 @@ export default function AboutPage() {
           </p>
 
           <p className="mb-8 text-lg leading-relaxed text-black/70 md:text-xl">
-            n the early 17th century, overexploitation dramatically reduced wildlife
+            In the early 17th century, overexploitation dramatically reduced wildlife
             numbers across the Western Cape, changing the landscape and ecosystems
             forever.
 
@@ -151,13 +151,13 @@ export default function AboutPage() {
 
           <p className="mb-8 text-lg leading-relaxed text-black/70 md:text-xl">
             Based in Hopefield, the oldest town on the West Coast, Nama Sands
-            lies along the R27 between Malmesbury and Vredenburg,just over an
+            lies along the R27 between Malmesbury and Vredenburg, just over an
             hour from Cape Town in a malaria-free zone.
           </p>
 
           <p className="mb-8 text-lg leading-relaxed text-black/70 md:text-xl">
-            Spanning over 4,000 acres of diverse terrain,from forest and
-            rolling dunes to Cape Fynbos and open plains,the land is both
+            Spanning over 4,000 acres of diverse terrain, from forest and
+            rolling dunes to Cape Fynbos and open plains, the land is both
             dramatic and restorative.
           </p>
 

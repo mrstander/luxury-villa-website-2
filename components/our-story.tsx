@@ -32,7 +32,7 @@ export function OurStory() {
         </p>
 
         <p className="mb-8 text-lg leading-relaxed text-black/70 md:text-xl">
-          n the early 17th century, overexploitation dramatically reduced wildlife
+          In the early 17th century, overexploitation dramatically reduced wildlife
           numbers across the Western Cape, changing the landscape and ecosystems
           forever.
 

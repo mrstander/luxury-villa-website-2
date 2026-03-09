@@ -113,7 +113,7 @@ export default function VillaPage() {
                         </h2>
 
                         <p className="text-lg leading-relaxed text-black/70 mb-8">
-                            Designed for barefoot luxury, The Villa blends seamlessly
+                            Designed for barefoot luxury, the villa blends seamlessly
                             into its natural surroundings. Expansive decks, open-plan
                             interiors and panoramic views create a sanctuary immersed
                             in wilderness.
