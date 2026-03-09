@@ -17,7 +17,7 @@ const experiences = [
     {
         title: "Spa Treatments",
         description:
-            "Enjoy private massage treatments in the comfort of your own suite, where relaxation comes to you. Choose from a 45 minute back, neck and shoulder massage, a 60 minute Swedish massage, or a 60 minute deep tissue massage,each designed to ease tension, restore balance, and rejuvenate body and mind in complete privacy and effortless luxury. Peaceful,restorative, and deeply therapeutic, it’s a truly unique way to unwind in the bush.",
+            "Enjoy private massage treatments in the comfort of your own suite, where relaxation comes to you. Choose from a 45 minute back, neck and shoulder massage, a 60 minute Swedish massage, or a 60 minute deep tissue massage, each designed to ease tension, restore balance, and rejuvenate body and mind in complete privacy and effortless luxury. Peaceful, restorative, and deeply therapeutic, it’s a truly unique way to unwind in the bush.",
         image: "/images/spa.jpeg",
     },
     {

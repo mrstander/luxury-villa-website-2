@@ -47,7 +47,7 @@ const faqData = {
         },
         {
             question: "Is the pool heated year-round?",
-            answer: "Yes,heated with a wooden fire.",
+            answer: "Yes, heated with a wooden fire.",
         },
         {
             question: "What catering options are available?",
@@ -58,7 +58,7 @@ const faqData = {
         {
             question: "Load shedding back-up?",
             answer:
-                "Green energy,totally off the grid with an 80kW generated backup system.",
+                "Green energy, totally off the grid with an 80kW generated backup system.",
         },
     ],
 }
