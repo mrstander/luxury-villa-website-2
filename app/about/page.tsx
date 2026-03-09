@@ -87,7 +87,7 @@ export default function AboutPage() {
 
           {/* Content */}
           <p className="mb-8 text-lg leading-relaxed text-black/70 md:text-xl">
-            Nama Sands was born from a vision rooted in conservation, responsibility,and a deep respect
+            Nama Sands was born from a vision rooted in conservation, responsibility, and a deep respect
             <br className="block md:hidden" />
             for the land.
           </p>

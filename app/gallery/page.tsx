@@ -19,7 +19,10 @@ const images = [
     "/images/gallery/gallery7.jpeg",
     "/images/gallery/gallery9.jpeg",
     "/images/gallery/gallery10.jpeg",
-    "/images/spa.jpeg",
+    "/images/gallery/wildlife1.jpeg",
+    "/images/gallery/wildlife2.jpeg",
+    "/images/gallery/wildlife3.jpeg",
+    "/images/gallery/wildlife4.jpeg",
 ]
 
 export default function GalleryPage() {

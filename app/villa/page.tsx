@@ -32,6 +32,10 @@ const galleryImages = [
     "/images/villa/villa6.jpg",
     "/images/villa/villa7.jpg",
     "/images/villa/villa8.jpg",
+    "/images/villa/villa9.jpeg",
+    "/images/villa/villa10.jpeg",
+    "/images/villa/villa11.jpeg",
+    "/images/villa/villa12.jpeg",
 ]
 
 const leftFeatures = [
