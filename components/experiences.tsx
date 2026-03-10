@@ -29,7 +29,7 @@ const experiences: Experience[] = [
     image: "/images/spa.jpeg",
   },
   {
-    title: "Private Chef",
+    title: "Private Chef & Baskets",
     description:
       "Enhance your stay with a special one-night luxury dining experience prepared by your own private chef in the comfort of your villa. Enjoy a beautifully curated dinner without lifting a finger. You are also welcome to pre-book one of our thoughtfully prepared baskets. Choose from a delicious breakfast basket or a traditional braai basket.",
     detail:

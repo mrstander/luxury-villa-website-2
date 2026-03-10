@@ -50,7 +50,7 @@ export function LaunchSpecial() {
           </p>
 
           <p className="mb-8 text-sm text-[#2a2318]/60">
-            Valid until end of March 2026, 3 Nights min.
+            Valid until end of April 2026, 3 Nights min.
           </p>
 
           <a
