@@ -19,6 +19,7 @@ import {
     Sofa,
     Trees,
 } from "lucide-react"
+import { BookingSearchBlock } from "@/components/booking-search-block"
 
 const heroImages = [
     "/images/villa/villa1.jpg",
@@ -100,6 +101,8 @@ export default function VillaPage() {
                     </p>
                 </div>
             </section>
+
+            <BookingSearchBlock />
 
 
 
