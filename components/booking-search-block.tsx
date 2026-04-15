@@ -21,7 +21,7 @@ export function BookingSearchBlock() {
 
         const formattedStart = format(startDate, "yyyy-MM-dd")
         const formattedEnd = format(endDate, "yyyy-MM-dd")
-        const bookingUrl = `https://book.nightsbridge.com/37327?startdate=${formattedStart}&enddate=${formattedEnd}&rtid=1`
+        const bookingUrl = `https://book.nightsbridge.com/39561?startdate=${formattedStart}&enddate=${formattedEnd}&rtid=1`
         window.open(bookingUrl, "_blank")
     }
 
