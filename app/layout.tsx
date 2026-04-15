@@ -26,6 +26,12 @@ export const metadata: Metadata = {
   },
   description:
     'Nama Sands — a private luxury villa and conservation reserve in the Western Cape, South Africa. Experience untamed wilderness and private luxury.',
+
+  // ✅ ADD THIS BLOCK
+  verification: {
+    google: '9ps_L5MjTdH4AxOcAkzZLmzD5mKNcSC3YuQndI7ogjw',
+  },
+
   keywords: [
     'luxury villa',
     'safari reserve',
@@ -46,7 +52,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://namasands.com'),
+  metadataBase: new URL('https://namasands.co.za'),
   alternates: {
     canonical: '/',
   },
@@ -54,7 +60,7 @@ export const metadata: Metadata = {
     title: 'Nama Sands Safari Reserve | Private Luxury Villa',
     description:
       'Experience untamed wilderness and private luxury at Nama Sands, a private villa in the Western Cape.',
-    url: 'https://namasands.com',
+    url: 'https://namasands.co.za',
     siteName: 'Nama Sands',
     images: [
       {
