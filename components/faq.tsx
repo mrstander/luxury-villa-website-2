@@ -32,10 +32,6 @@ const faqData = {
             answer: "Yes, all game drives are private.",
         },
         {
-            question: "What is included in the rate?",
-            answer: "One game drive per day is included in the rate.",
-        },
-        {
             question: "Is it malaria free?",
             answer: "Yes.",
         },
